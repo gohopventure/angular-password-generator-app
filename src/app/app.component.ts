@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor() {}
+  password: string;
+
+  constructor() {
+    this.password = '';
+  }
 
   submit() {
-    console.log("Huzzah!");
+    this.password = "Huzzah!";
+    console.log(this.password);
   }
 }
